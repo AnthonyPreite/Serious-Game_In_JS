@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Category Drag n Drop</title>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="liste">
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="qcm.html">QCM Unique</a></li>
+            <li class="item"><a href="#">Category Drag n Drop</a></li>
+            <li class="item"><a href="reording.html">Reording Drag n Drop</a></li>
+        </ul>
+    </nav>
+    <div class="modul">
+        <div class="drop-things">
+            <div class="start">
+              <div class="box2">
+                <div class="case" id="Painter" draggable="true">Subtance Painter</div>
+                <div class="case" id="Maya" draggable="true">Autodesk Maya</div>
+                <div class="case" id="Designer" draggable="true">
+                  Affinity Designer
+                </div>
+                <div class="case" id="Photo" draggable="true">Affinity Photo</div>
+                <div class="case" id="Max" draggable="true">3DS Max</div>
+                <div class="case" id="Illustrator" draggable="true">Illustrator</div>
+                <div class="case" id="Figma" draggable="true">Figma</div>
+              </div>
+            </div>
+            <!-- .start -->
+            <div class="end">
+              <h2>3D</h2>
+              <div class="box"></div>
+              <h2>UI-UX</h2>
+              <div class="box"></div>
+            </div>
+            <!-- .end -->
+          </div>
+          <!-- .drop-targets -->
+    </div>
+
+    <script src="category.js"></script>
+
+</body>
+</html>
