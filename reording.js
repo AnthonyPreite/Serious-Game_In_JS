@@ -5,7 +5,7 @@ function olist (target) {
   
   
     for (let i of items) {
-     
+    
       i.draggable = true;
       
       
@@ -21,21 +21,21 @@ function olist (target) {
         if (i != current) { i.classList.add("active"); }
       };
   
-     
+    
       i.ondragleave = () => {
         i.classList.remove("active");
       };
   
-     
+    
       i.ondragend = () => { for (let it of items) {
           it.classList.remove("hint");
           it.classList.remove("active");
       }};
-   
-     
+  
+    
       i.ondragover = (evt) => { evt.preventDefault(); };
-   
-     
+  
+    
       i.ondrop = (evt) => {
         evt.preventDefault();
         if (i != current) {
